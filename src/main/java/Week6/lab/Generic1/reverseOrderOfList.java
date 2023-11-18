@@ -2,17 +2,15 @@ package Week6.lab.Generic1;
 
 import java.util.List;
 import java.util.ArrayList;
-public class reverseOrderOfList {
-    public static < T > List < T > reverseList(List< T > originalList) {
-        List < T > reversedList = new ArrayList<>();
+class reverseOrderOfList {
+    public static <T> List<T> reverseList(List<T> originalList) {
+        List<T> reversedList = new ArrayList<>();
 
         for (int i = originalList.size() - 1; i >= 0; i--) {
             reversedList.add(originalList.get(i));
         }
-
         return reversedList;
     }
-
     public static void main(String[] args) {
         List < Integer > numbers = List.of(1, 2, 3, 4, 5, 6);
         List < String > colors = List.of("Red", "Green", "Orange");
